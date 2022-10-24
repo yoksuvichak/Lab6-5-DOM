@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function addthis(){
+            var firstname = document.getElementById("fname")
+            var address = document.getElementById("addre")
+            var numberphone = document.getElementById("numphone")
+            var table = document.getElementById("tab")
+
+            var table = document.getElementById("tabl")
+            var tr = document.createElement("tr")
+
+            var td1 =document.createElement("td")
+            td1.innerHTML = firstname.value;
+            tr.appendChild(td1)
+
+            var td2 =document.createElement("td")
+            td2.innerHTML = address.value;
+            tr.appendChild(td2)
+
+            var td3 =document.createElement("td")
+            td3.innerHTML = numberphone.value;
+            tr.appendChild(td3)
+            
+            table.appendChild(tr)
+        }
+    </script>
+    <style>
+        table,tr,th,td{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <form action=addthis()>
+        <label>ชื่อลูกค้า:</label>
+        <input type="text" id="fname">
+        </p>
+        <label>ที่อยู่:</label>
+        <input type="text" id="addre">
+        </p>
+        <label>โทรศัพท์:</label>
+        <input type="text" id="numphone">
+        </p>
+
+        <input type="button" onclick="addthis()" value="เพิ่ม">
+    </form>
+
+    <table id="tabl">
+        <tr>
+            <th>ชื่อลูกค้า</th>
+            <th>ที่อยู่</th>
+            <th>เบอร์โทรศัพท์</th>
+        </tr>
+        
+    </table>
+    </ul>
+</body>
+
+</html>
